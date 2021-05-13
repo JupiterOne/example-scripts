@@ -1,0 +1,16 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.2",
+  "version": 1,
+  "metadata": {
+    "tools": [
+      {
+        "vendor": "JupiterOne",
+        "name": "Node.js module",
+        "version": "0.1.0",
+        "hashes": []
+      }
+    ]
+  },
+  "components": []
+}

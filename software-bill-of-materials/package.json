@@ -1,7 +1,7 @@
 {
-  "name": "npm-inventory",
-  "version": "0.1.1",
-  "description": "Recursively gather information on NPM dependencies and report to J1",
+  "name": "npm-software-bill-of-materials",
+  "version": "0.1.0",
+  "description": "Generate CycloneDX-format SBOM file from NPM dependencies found in J1.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Erich Smith <erich.smith@jupiterone.com>",
@@ -11,12 +11,6 @@
     "dist",
     "bin"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "bin": {
-    "inventory": "bin/inventory"
-  },
   "scripts": {
     "env": "export $(grep -v '^#' .env | xargs);",
     "format": "yarn prettier --write '**/*.{ts,js,json,css,md,yml}'",
@@ -39,8 +33,8 @@
   },
   "devDependencies": {
     "@types/node": "^13.9.8",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
     "eslint": "^7.14.0",
     "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-prettier": "^3.1.4",
