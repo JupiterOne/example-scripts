@@ -138,6 +138,7 @@ async function run (baseDir): Promise<void> {
             name: dep.name.split('/').pop(),
             license: dep.license,
             scope: dep.name.split('/')[0].replace(/^@/,''),
+            version: dep.version
           }
         );
       }, attemptOptions);
